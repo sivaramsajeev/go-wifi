@@ -37,7 +37,7 @@ func listNetworks() (int, error) {
 	fmt.Println("Network List")
 	fmt.Println("--------------------------------------------------")
 	for _, bss := range bssList {
-		print(bss.SSID, bss.Signal, bss.KeyMgmt)
+		fmt.Println(bss.SSID, bss.Signal, bss.KeyMgmt)
 	}
 	return len(bssList), nil
 }
